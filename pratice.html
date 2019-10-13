@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>WEB Engineering</title>
+    <style>
+        ul {
+            list-style-type:disc;
+            padding: 5px;
+            background-color: orange;
+            border: 1px solid #ff0000;
+            top:auto;
+            position:sticky;
+
+        }
+        li a{
+            display:block;
+            background-color:gray;
+            padding:8px 16px;
+            text-decoration-color:none;
+
+
+        }
+        li a.active{
+            background-color:darkgreen;
+            color:white;
+
+
+        }
+        li a:hover:not(.active){
+
+            background-color:darkorange;
+            color:white;
+        }
+        li a{
+            text-align:center;
+            border:5px #ff0000;
+        }
+
+        
+
+        * p {
+            background-color: hsla(9,100%,64%,0.2);
+            border-style: dotted;
+            width: 4px,6px,8px,10px;
+        }
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+                nav ul a {
+                    text-decoration: none;
+                }
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+        }
+        * h2
+        {
+          background-color:crimson;
+        }
+        p{
+            color:Background:darkgreen;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display:grid;
+            font-size:medium;
+            font-variant-position:normal;
+            display:contents;
+
+        }
+        p:nth-child(3)
+        {
+            background-color:aqua;
+        }
+    </style>
+</head>
+
+<body style="background-color:olivedrab">
+    <link rel="stylesheet" type="text/css" href="pratice.css">
+    <div class="container">
+        <header>
+            <h1>signup page</h1>
+        </header>
+
+    </div>
+
+
+    
+       <h3>Vertical Navigation bar..</h3>
+       <nav>
+           <ul>
+               <li><a href="#Home">Home</a></li>
+               <li><a href="#AboutUS">About US</a></li>
+               <li><a href="#Contact">Contact</a></li>
+           </ul>
+       </nav>
+    
+    <main>
+
+        <p style="border:10px solid tomato "  >
+            In the example below, usernames are shown along with the number of points in a contest.
+            If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").
+        </p>
+
+        <ol>
+            <li>User hrefs: 60 points</li>
+            <li>User <bdi>jdoe</bdi>: 80 points</li>
+            <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ol>
+        <img src="F:\Semester 4 Fall 19 BSCS\Web Engineering\planet.jpg" width="200" height="180" alt="Planets" usemap="#planetmap">
+
+        <map name="planetmap">
+            <!----<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+            <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+            <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">-->
+        </map>
+        <p>we will open our new shop Today at <time>  12:30</time> Every Day</p>
+        <p>Dear your Exam will be start at <time datetime="11-10-2019 11:59">Monday</time>.</p>
+        <table>
+            <tr>
+                <th>January<dialog>This is an open dialog window</dialog></th>
+                <th>February</th>
+                <th>March</th>
+            </tr>
+            <tr>
+                <td>
+                    31
+                </td>
+                <td>28</td>
+                <td>31</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <form>
+
+        <fieldset>
+
+            <legend align="center" style="border-top-color:brown">Personal Information</legend>
+            First Name:<br />
+            <input type="text" name="firstname" /><br />
+            Last Name:<br />
+            <input type="text" name="lastname" /><br />
+            E-mail:<br /><input type="email" name="email" autocomplete="off"><br />
+            Birthday:<br />
+            <input type="date" name="bday"><br>
+
+
+
+            Gender Information:<br />
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br /><br />
+
+
+            please select your country<br />
+            <select>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Iran">Iran</option>
+                <option value="France">France</option>
+                <option value="China">China</option>
+            </select><br /><br />
+            please select your university:<br /><br />
+            <select>
+                <option value="Bahria">Bahria</option>
+                <option value="Air">Air</option>
+                <option value="Nust">Nust</option>
+                <option value="LSE">LSE</option>
+            </select><br /><br />
+
+            password<br />
+            <input type="password" name="password" /><br />
+            Confirm Password<br />
+            <input type="password" name="password" /><br />
+            <input type="submit" name="signup" value="signup" /><br />
+        </fieldset>
+    </form>
+    Following cities contain these campuses:
+    <ul type="disc">
+        <li> London</li>
+        <li>New York</li>
+        <li>Islamabad</li>
+        <li>Mancaster</li>
+
+    </ul>
+    <section>
+        <header>Bahria University  </header>
+        <header>Campuses</header>
+        <h2>About Bahria</h2>
+        <p style="background-color:coral,ActiveBorder:darkorange">
+            Bahria university is a public research university in pakistan which offers bnumber of programs in computer sciences,
+            Engineering Sciences and Earth and environmental sciences.
+        </p>
+        <footer>
+            <p>posted by Ali Hamza</p><br />
+            contact information:<a href="alihamzach22@gmail.com">alihamzach22@gmail.com</a><br />
+
+            @copyRights: @yazdani travels.
+
+        </footer>
+    </section>
+
+</body>
+</html>
